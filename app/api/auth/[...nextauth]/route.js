@@ -23,7 +23,6 @@ const handler = NextAuth({
         },
     
         async signIn({profile}){
-            console.log(profile);
             try {
                 // serverLess -> lambda -> dynamodb
                 await connectToDB();
